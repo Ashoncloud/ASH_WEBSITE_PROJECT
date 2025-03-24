@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #002147;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Profile Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 8px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.social-links a {
+    color: #002147;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h4 {
+    text-align: left;
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjusts spacing between items */
+    list-style: none;
+    padding: 0;
+}
+
+.tools-list li {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents breaking */
+}

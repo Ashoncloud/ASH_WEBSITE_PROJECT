@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashwin V | Portfolio</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #1b2a4e;
+            --secondary-color: #f5f5f5;
+            --accent-color: #d32f2f;
+            --text-color: #333;
+            --font-main: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-main);
+        }
+
+        body {
+            background: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            padding-top: 50px;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2%;
+    background: var(--primary-color);
+    color: #fff;
+    position: fixed; /* Make header sticky */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Align 'Ashwin V' to the left */
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Align navigation to the right */
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem 8%;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-info {
+            max-width: 500px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 0.5% 10%;
+            text-align: center;
+            position: relative;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .left-align {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.5rem 0;
+        }
+
+        /* Dotted Line Effect Between Sections */
+        section:not(:last-child)::after {
+            content: "";
+            display: block;
+            width: 100%;
+            margin: 10px auto;
+            border-bottom: 2px dashed var(--primary-color);
+        }
+
+        #resume a {
+            display: inline-block;
+            margin-top: 1%;
+            padding: 0.5rem 1.5rem;
+            width: 40%;
+            background: var(--accent-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 2px;
+            transition: background 0.3s;
+        }
+
+        #resume a:hover {
+            background: #b71c1c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: var(--primary-color);
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ashwin V</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="profile">
+        <div class="profile-container">
+            <img src="images/profile-img.jpg" class="profile-img" alt="Profile Image">
+            <div class="profile-info">
+                <h2><u>Ashwin V</u></h2>
+                <p>DevOps Engineer | QA & Automation</p>
+                <p>Email: <a href="mailto:ashsivu567@gmail.com">ashsivu567@gmail.com</a></p>
+                <p>Location: Chennai, Tamil Nadu</p>
+                <p><a href="resume.pdf" download><i class="fas fa-file-pdf"></i> Download Resume</a></p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ashwin-siva-8a012b212" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ashoncloud" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>               
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2><u>Projects</u></h2>
+        <ul>
+            <h3>Monolithic to Microservice on 3 Domains:</h3>
+            <li class="left-align"><strong> FinanceMe </strong>– DevOps Implementation for Banking Application  
+                Technologies: Spring Boot, AWS, Kubernetes, Docker, Terraform, Ansible, Jenkins, Maven, Git, Prometheus, Grafana</li>
+            <li class="left-align"><strong>Medicure </strong>– DevOps Automation for Healthcare Microservices  
+                Technologies:Spring Boot, Kubernetes, AWS/Azure/GCP, Jenkins, Git, Terraform, Docker, Ansible, Prometheus, Grafana</li>
+            <li class="left-align"><strong> InsureMe</strong> – DevOps Transformation for Insurance Application  
+                Technologies:Spring Boot, AWS, Kubernetes, Docker, Terraform, Ansible, Jenkins, Git, Prometheus, Grafana</li>
+        </ul>
+        <h4 class="left-align">Tools Implemented :</h4>
+        <ul class="left-align">
+           <li>Terraform – Defined and provisioned AWS infrastructure as code, ensuring repeatability and scalability.</li>
+            <li>AWS – Deployed cloud resources, including EC2, S3, IAM</li>
+            <li>Linux – Base OS and automated system configurations, managed permissions, and optimized performance using Bash scripting & Ansible.
+            <li>Docker – Containerized applications for portability and efficient deployments across different environments.</li>
+            <li>Kubernetes – Managed container orchestration, auto-scaling, and load balancing using K8s deployments, services.</li>
+            <li>Jenkins – Implemented an automated CI/CD pipeline that integrates with GitHub, Docker, and Kubernetes for seamless deployments.</li>            
+            <li>Maven: To create artifacts</li>
+            <li>Prometheus – Set up real-time monitoring and alerting for Kubernetes pods, nodes, and application metrics.</li>
+            <li>Grafana – Created custom dashboards for visualizing system health, application performance, and key DevOps metrics.</li>
+            <p>For more information , kindly check my <a href="https://github.com/Ashoncloud/Project_plan_devops">GitHub-Repo</a></p>
+            </ul>
+    </section>
+    
+    <section id="skills">
+        <h2><u>Techincal-Skills</u></h2>
+        <div align="center">
+            <ul style="display: inline-block; text-align: left;">
+                <li><strong>Containerization:</strong> Docker</li>
+                <li><strong>Orchestration:</strong> Kubernetes</li>
+                <li><strong>Cloud Platform:</strong> AWS, AZURE</li>
+                <li><strong>Scripting:</strong> Bash and Python</li>
+                <li><strong>Version Control:</strong> GIT, GITHUB, and GITLAB</li>
+                <li><strong>Operating System:</strong> Linux (Ubuntu, CentOS), Windows Server</li>
+                <li><strong>Network Protocols:</strong> SMTP, HTTP, HTTPS</li>
+                <li><strong>Infrastructure as Code:</strong> Terraform and Ansible</li>
+                <li><strong>Monitoring & Observability:</strong> Prometheus and Grafana</li>
+                <li><strong>CI/CD JOB:</strong> Jenkins, Argo CD</li>
+                <li><strong>Programming Language:</strong> Python and Bash scripting</li>
+                <li><strong>Telnet Tools:</strong> mobaXterm, PuTTY, Git Bash, VS Code</li>
+                <li><strong>Agile methodology:</strong> Scrum | QA Analysis</li>
+            </ul>
+        </div>
+        
+    </section>
+    
+    <section id="contact">
+        <h2><u>Contact Me</u></h2>
+                <p>Email: <a href="mailto:ashsivu567@gmail.com">ashsivu567@gmail.com</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/ashwin-siva-8a012b212">ashwin-siva-8a012b212</a></p>
+                <p>GitHub: <a href="https://github.com/Ashoncloud">Ashoncloud</a></p>
+    </section>
+    
+    <section id="resume">
+        <h2><u>Resume</u></h2>
+        <a href="resume.pdf" download><i class="fas fa-file-pdf"></i> Download Resume</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Ashwin V. All rights reserved.</p>
+    </footer>
+</body>
+</html>
